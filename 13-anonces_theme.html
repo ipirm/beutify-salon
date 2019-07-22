@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Объявления. Категория</title>
+<meta name="description" content="">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width">
+
+<!-- Style + Fonts -->
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/mediaelementplayer.min.css" />
+<link rel="stylesheet" href="css/slick.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nice-select.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/3dgallery.css" type="text/css" media="screen" />
+
+</head>
+
+<body>
+
+<div class="mobile-menu" id="headerMenu">
+	<nav>
+		<li><a href="#">Доска объявлений</a></li>        
+		<li><a href="#">Акции</a></li>        
+		<li><a href="#">Статьи</a></li>        
+		<li><a href="#">Рейтинги</a></li>        
+		<li><a href="#">Запись</a></li>      
+		<li><a href="#">Рекламодателям</a></li>
+	</nav>
+</div>
+
+<header>
+<div class="container">
+<div class="row align-items-center justify-content-between">
+
+	<div class="col col-xl-auto"><a href="#" class="head-logo"></a></div>
+	<nav class="col-auto nav d-none d-xl-flex">
+		<li><a href="#">Доска объявлений</a></li>        
+		<li><a href="#">Акции</a></li>        
+		<li><a href="#">Статьи</a></li>        
+		<li><a href="#">Рейтинги</a></li>        
+		<li><a href="#">Запись</a></li>      
+		<li><a href="#">Рекламодателям</a></li>
+	</nav>
+	<div class="col-auto">
+		<div class="head-cart">4</div>
+		<div class="head-compare"></div>
+		<div class="head-login-mobile d-xl-none"></div>
+	</div>
+	<a class="head-login d-none d-xl-block" href="#">Вход</a>
+	<div class="col-auto d-xl-none pl-0">
+		<div class="mobile-menu-charger">
+			<i></i>
+			<i></i>
+			<i></i>
+		</div>
+	</div>
+</div>	
+</div>
+</header>
+
+<div class="page-container">
+
+<div class="advert-searchbar  justify-content-center d-none d-md-flex">
+
+	<form action="advert-search d-flex align-items-center" method="get">
+		<input type="search" placeholder="Поиск">
+		<select class="nice-select">
+			<option>Все рубрики</option>
+			<option>Маникюр</option>
+			<option>Педикюр</option>
+			<option>Ламинирование</option>
+		</select>
+		<span></span>		
+		<select class="nice-select">
+			<option>Все районы</option>
+			<option>Вокзал</option>
+			<option>Центральный</option>
+			<option>Краснофлотский</option>
+		</select>
+		<input type="submit">
+	</form>
+
+</div>
+
+<div class="advert-head">
+<div class="container">
+
+	<div class="row">
+		<div class="col-auto advert-icon"><img src="img/advert-icon1.png"></div>
+		<div class="col-auto advert-title">
+			<h1>Аренда <span>(3425)</span></h1>
+			<div class="advert-subcats">Сдам, Сниму.</div>
+		</div>
+		<div class="col-auto ml-auto d-none d-md-flex">
+			<div data-fancybox data-src="#note" class="add-advert">+ Разместить объявление</div>
+		</div>
+	</div>
+
+</div>
+</div>
+
+
+<div class="advert-filters">
+<div class="container">
+
+	<div class="row filter-head">
+		<div class="col-lg-auto advert-filter-title">Фильтр</div>
+		<div class="col-auto ml-auto advert-filter-close">Закрыть</div>
+	</div>
+	
+	<div class="row justify-content-around filter-content">
+		<div class="radio-group col-auto">
+			<input type="radio" name="option1_1" id="option1" checked><label for="option1">Сдам</label>
+			<input type="radio" name="option1_1" id="option2"><label for="option2">Сниму</label>
+		</div>
+		
+		<div class="radio-group col-auto">
+			<input type="radio" name="option1_2" id="option3" checked><label for="option3">Кабинет</label>
+			<input type="radio" name="option1_2" id="option4"><label for="option4">Рабочее<br/> место</label>
+			<input type="radio" name="option1_2" id="option5"><label for="option5">Помещение</label>
+		</div>	
+		
+		<div class="single-select col-auto">
+			<div class="select-label">Район</div>
+			<select>
+				<option>Центральный</option>
+				<option>Краснофлотский</option>
+				<option>Кировский</option>
+				<option>Железнодорожный</option>
+				<option>Индустриальный</option>
+			</select>
+			<div class="checkboxes-group-mobile d-md-none">
+				<div class="single-checkbox"><input type="checkbox" id="option1_1"><label for="option1_1">Центральный</label></div>
+				<div class="single-checkbox"><input type="checkbox" id="option1_2"><label for="option1_2">Краснофлотский</label></div>
+				<div class="single-checkbox"><input type="checkbox" id="option1_3"><label for="option1_3">Кировский</label></div>
+				<div class="single-checkbox"><input type="checkbox" id="option1_4"><label for="option1_4">Железнодорожный</label></div>
+				<div class="single-checkbox"><input type="checkbox" id="option1_5"><label for="option1_5">Индустриальный</label></div>
+			</div>
+		</div>	
+		
+		<div class="single-select col-auto">
+			<div class="select-label">Период</div>
+			<select>
+				<option>день</option>
+				<option>неделя</option>
+				<option>месяц</option>
+				<option>год</option>
+			</select>
+			<div class="checkboxes-group-mobile d-md-none">
+				<div class="single-checkbox"><input type="checkbox" id="option2_1"><label for="option2_1">день</label></div>
+				<div class="single-checkbox"><input type="checkbox" id="option2_2"><label for="option2_2">неделя</label></div><br/>
+				<div class="single-checkbox"><input type="checkbox" id="option2_3"><label for="option2_3">месяц</label></div>
+				<div class="single-checkbox"><input type="checkbox" id="option2_4"><label for="option2_4">год</label></div>
+			</div>
+		</div>	
+		
+		<div class="single-range col-auto text-center text-md-left">
+			<div class="select-label">Стоимость</div>
+			<div id="advert-price"></div>
+			<input type="text" readonly class="range-min" id="range-min" value="900">	<input type="text" readonly class="range-max" id="range-max" value="1900">
+		</div>	
+		
+		
+		<div class="col-auto text-center text-md-left mt-4 mt-md-0">
+			<input type="submit" value="Применить">
+		</div>	
+		
+		
+	</div>
+</div>
+</div>
+
+
+<div class="advert-catalog">
+<div class="container">
+
+	<div class="sorting-line row justify-content-around d-none d-md-flex">
+		<div class="single-select col-auto">
+			<div class="select-label">Сортировка:</div>
+			<select>
+				<option>цена (по возрастанию)</option>
+				<option>цена (по убыванию)</option>
+				<option>популярность</option>
+				<option>название</option>
+			</select>
+		</div>
+		<div class="single-select col-auto">
+			<div class="select-label">Показывать по:</div>
+			<select>
+				<option>12</option>
+				<option>24</option>
+				<option>36</option>
+				<option>48</option>
+			</select>
+		</div>
+		<div class="single-checkbox col-auto">
+			<input type="checkbox" name="checkbox1" id="checkbox1" class="circle-checkbox" checked><label for="checkbox1">Только с фото</label>
+		</div>
+		<div class="sort-grid col-auto">
+			<div class="grid-1 active"></div>
+			<div class="grid-2"></div>
+		</div>
+		<div class="pagenavi col-auto">
+			<a class="active" href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<span>...</span>
+		</div>
+	</div>
+	
+	<div class="advert-list default row">
+		<div class="col-6 col-lg-4">
+			<div class="advert-item yellow">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-hot">Срочно</div>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>
+		</div>
+		<div class="col-6 col-lg-4">
+			<div class="advert-item blue">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-hot">Срочно</div>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>	
+		</div>
+		<div class="col-6 col-lg-4">
+			<div class="advert-item green">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>	
+		</div>	
+		<div class="col-6 col-lg-4">
+			<div class="advert-item purple">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>
+		</div>
+		<div class="col-6 col-lg-4">
+			<div class="advert-item purple2">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>	
+		</div>
+		<div class="col-6 col-lg-4">
+			<div class="advert-item yellow">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>	
+		</div>	
+		<div class="col-6 col-lg-4">
+			<div class="advert-item blue">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>	
+		</div>		
+		<div class="col-6 col-lg-4">
+			<div class="advert-item green">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>	
+		</div>		
+		<div class="col-6 col-lg-4">
+			<div class="advert-item purple">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>
+		</div>		
+		<div class="col-6 col-lg-4">
+			<div class="advert-item yellow">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>
+		</div>
+		<div class="col-6 col-lg-4">
+			<div class="advert-item blue">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>	
+		</div>
+		<div class="col-6 col-lg-4">
+			<div class="advert-item green">
+				<div class="ai-details" style="background:url(img/advert-img.jpg)">
+					<a class="ai-phone" href="tel:79999999999" tabindex="0">+7 (999) 999-99-99</a>
+					<div class="ai-adress">Центральный</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+					<div class="ai-date">11.01.18 20:37</div>
+				</div>
+				<a class="ai-title" href="#" tabindex="0">Аппарат для домашнего маникюра и педикюра</a>
+				<div class="ai-hot">Срочно</div>
+				<div class="ai-autor"><span>Автор:</span> Татьяна</div>
+				<div class="ai-price">6500 <span>руб</span></div>
+			</div>	
+		</div>	
+	</div>
+	
+	<div class="advert-list note row">
+		<div class="col-xl-6">
+			<div class="advert-item left">
+				<div class="ai-preview" style="background:url(img/advert-img.jpg)">
+					<div class="ai-info">Краткое описание в несколько слов идет тут Краткое опи сание в несколько слов идет тут</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+				</div>
+				<div class="ai-content">
+					<a class="ai-title" href="#">Аппарат для домашнего маникюра и педикюра</a>
+					<div class="ai-price">6500 <span>руб</span></div>
+					<a href="tel:79999999999" class="ai-phone">+7 (999) 999–99–99</a>
+					<div class="ai-adress">ул.Длинное название д.10</div>
+					<div class="ai-time">11.01.18 <span>20:37</span></div>
+				</div>
+			</div>
+		</div>		
+		<div class="col-xl-6">
+			<div class="advert-item">
+				<div class="ai-preview" style="background:url(img/advert-img.jpg)">
+					<div class="ai-info">Краткое описание в несколько слов идет тут Краткое опи сание в несколько слов идет тут</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+				</div>
+				<div class="ai-content">
+					<a class="ai-title" href="#">Аппарат для домашнего маникюра и педикюра</a>
+					<div class="ai-price">6500 <span>руб</span></div>
+					<a href="tel:79999999999" class="ai-phone">+7 (999) 999–99–99</a>
+					<div class="ai-adress">ул.Длинное название д.10</div>
+					<div class="ai-time">11.01.18 <span>20:37</span></div>
+				</div>
+			</div>
+		</div>		
+		<div class="col-xl-6">
+			<div class="advert-item left">
+				<div class="ai-preview" style="background:url(img/advert-img.jpg)">
+					<div class="ai-info">Краткое описание в несколько слов идет тут Краткое опи сание в несколько слов идет тут</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+				</div>
+				<div class="ai-content">
+					<a class="ai-title" href="#">Аппарат для домашнего маникюра и педикюра</a>
+					<div class="ai-price">6500 <span>руб</span></div>
+					<a href="tel:79999999999" class="ai-phone">+7 (999) 999–99–99</a>
+					<div class="ai-adress">ул.Длинное название д.10</div>
+					<div class="ai-time">11.01.18 <span>20:37</span></div>
+				</div>
+			</div>
+		</div>		
+		<div class="col-xl-6">
+			<div class="advert-item">
+				<div class="ai-preview" style="background:url(img/advert-img.jpg)">
+					<div class="ai-info">Краткое описание в несколько слов идет тут Краткое опи сание в несколько слов идет тут</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+				</div>
+				<div class="ai-content">
+					<a class="ai-title" href="#">Аппарат для домашнего маникюра и педикюра</a>
+					<div class="ai-price">6500 <span>руб</span></div>
+					<a href="tel:79999999999" class="ai-phone">+7 (999) 999–99–99</a>
+					<div class="ai-adress">ул.Длинное название д.10</div>
+					<div class="ai-time">11.01.18 <span>20:37</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-6">
+			<div class="advert-item left">
+				<div class="ai-preview" style="background:url(img/advert-img.jpg)">
+					<div class="ai-info">Краткое описание в несколько слов идет тут Краткое опи сание в несколько слов идет тут</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+				</div>
+				<div class="ai-content">
+					<a class="ai-title" href="#">Аппарат для домашнего маникюра и педикюра</a>
+					<div class="ai-price">6500 <span>руб</span></div>
+					<a href="tel:79999999999" class="ai-phone">+7 (999) 999–99–99</a>
+					<div class="ai-adress">ул.Длинное название д.10</div>
+					<div class="ai-time">11.01.18 <span>20:37</span></div>
+				</div>
+			</div>
+		</div>		
+		<div class="col-xl-6">
+			<div class="advert-item">
+				<div class="ai-preview" style="background:url(img/advert-img.jpg)">
+					<div class="ai-info">Краткое описание в несколько слов идет тут Краткое опи сание в несколько слов идет тут</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+				</div>
+				<div class="ai-content">
+					<a class="ai-title" href="#">Аппарат для домашнего маникюра и педикюра</a>
+					<div class="ai-price">6500 <span>руб</span></div>
+					<a href="tel:79999999999" class="ai-phone">+7 (999) 999–99–99</a>
+					<div class="ai-adress">ул.Длинное название д.10</div>
+					<div class="ai-time">11.01.18 <span>20:37</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-6">
+			<div class="advert-item left">
+				<div class="ai-preview" style="background:url(img/advert-img.jpg)">
+					<div class="ai-info">Краткое описание в несколько слов идет тут Краткое опи сание в несколько слов идет тут</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+				</div>
+				<div class="ai-content">
+					<a class="ai-title" href="#">Аппарат для домашнего маникюра и педикюра</a>
+					<div class="ai-price">6500 <span>руб</span></div>
+					<a href="tel:79999999999" class="ai-phone">+7 (999) 999–99–99</a>
+					<div class="ai-adress">ул.Длинное название д.10</div>
+					<div class="ai-time">11.01.18 <span>20:37</span></div>
+				</div>
+			</div>
+		</div>		
+		<div class="col-xl-6">
+			<div class="advert-item">
+				<div class="ai-preview" style="background:url(img/advert-img.jpg)">
+					<div class="ai-info">Краткое описание в несколько слов идет тут Краткое опи сание в несколько слов идет тут</div>
+					<a class="ai-readmore" href="#" tabindex="0">Посмотреть</a>
+				</div>
+				<div class="ai-content">
+					<a class="ai-title" href="#">Аппарат для домашнего маникюра и педикюра</a>
+					<div class="ai-price">6500 <span>руб</span></div>
+					<a href="tel:79999999999" class="ai-phone">+7 (999) 999–99–99</a>
+					<div class="ai-adress">ул.Длинное название д.10</div>
+					<div class="ai-time">11.01.18 <span>20:37</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row d-none d-md-flex">
+		<div class="pagenavi ml-auto mb-5">
+			<a class="active" href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<span>...</span>
+		</div>
+	</div>
+	
+	<div class="show-more-advert">Показать еще</div>
+	
+	
+	<div class="advert-readmore"><span class="show-text hidden">Развернуть</span><span class="hide-text">Свернуть</span></div>
+	
+	<div class="advert-content active">
+		<h2>О разделе "Сдам в аренду", "Сниму в аренду"</h2>
+		<p>Бесплатная доска объявления, на которой можно продать б/у или новые товары, разместить объявление о предложении частных услуг и найти новые знакомства в своем городе или </p>
+	</div>
+
+</div>
+</div>
+
+
+
+</div><!-- Page Container -->
+
+<footer>
+<div class="container">
+
+	<div class="row f-menuline">
+		<nav class="nav">
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Каталог услуг</a></li>
+			<li><a href="#">Акции</a></li>
+			<li><a href="#">Рейтинги</a></li>		
+			<li><a href="#">Запить on-line</a></li>	
+			<li><a href="#">Рекламодателю</a></li>
+		</nav>
+		
+		<a href="#" class="col-auto d-none d-lg-flex ml-auto f-callback">Обратная связь</a>
+	</div>
+	
+	<div class="row align-items-center justify-content-between">
+		<a href="#" class="col-auto f-logo order-2 order-md-1"></a>
+		<div class="col-auto f-copyrights order-3 order-md-2">© Все права защищены</div>
+		<a href="#" class="col-auto f-sitemap d-none d-md-flex"></a>
+		<a href="#" class="col-auto f-documents d-none d-md-flex">Нормативные акты</a>
+		<div class="col-12 col-md-auto f-payments order-1 order-md-5">
+			<a href="#"><img src="img/webmoney-icon.png"></a>
+			<a href="#"><img src="img/yandex-payment.png"></a>
+			<a href="#"><img src="img/visa-payment.png"></a>
+			<a href="#"><img src="img/qiwi-payment.png"></a>
+			<a href="#"><img src="img/paypal-payment.png"></a>
+		</div>
+	</div>
+
+</div>
+</footer>
+
+
+<!-- JS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+<script src="js/slick.min.js" type="text/javascript"></script>
+<script src="js/mediaelement-and-player.min.js" type="text/javascript"></script>
+<script src="js/modernizr.custom.53451.js" type="text/javascript"></script>
+<script src="js/jquery.gallery.js" type="text/javascript"></script>
+<script src="js/jquery.nice-select.js" type="text/javascript"></script>
+<script src="js/jquery-ui.js" type="text/javascript"></script>
+<script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
+<script src="js/jquery.ui.touch-punch.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+<div id="note" class="modal-window" style="display:none">
+	<div class="modal-head">
+		<div class="modal-title">Правила размещения объявлений на сайте</div>
+		<div class="modal-description">Просим Вас ознакомиться и соблюдать указанные правила. Это облегчит поиск требуемых услуг потенциальными покупателями, и сделает Ваше пребывание на нашем портале комфортным и безопасным</div>
+	</div>
+	<div class="modal-content">
+		<h2>Правила размещения объявлений</h2>
+		<p>Размещение объявлений бесплатно Каждый пользователь  может подать до 100 объявлений бесплатно в любые разделы сайта. В разделы «Услуги» и «Работа» вы можете разместить бесплатно лишь одно объявления. Каждое следующее будет платным. Высокая популярность доски объявлений Ежедневно посещают 20 тыс пользователей, которые на сайте находят необходимые вещи или услуги, размещают новые объявления о продаже товаров, аренде квартир, а также о желании найти новые знакомства. Это позволяет входить в рейтинг Топ-10 досок объявлений Украины. Большой выбор возможностей для дополнительной рекламы Все пользователи доски объявлений  могут для увеличения эффективности своих объявлений, использовать бесплатные обновления вверх списка рубрики, выделить объявления цветом или воспользоваться топ-зоной.</p>
+		<a href="#" class="add-advert">+ Разместить объявление</a>
+		
+		<h2>Как подать объявление?</h2>
+		<p>На главной странице сайта или в любой из рубрик, нажмите кнопку "Разместить объявление" и выберите наиболее подходящую подрубрику для вашего предложения. Будьте внимательны при выборе рубрики, пытайтесь разместить объявления в той рубрике, где ее будут чаще всего искать пользователи. Например, в рубрику «Недвижимость» не стоит подавать объявления с предложениями услуг риелтора. Все объявления о предоставлении услуг размещаются в разделе «Услуги и бизнес». Далее заполните поле заголовок и составьте описания объявления. В описания напишите подробную информацию о товаре, которую вы не можете указать с помощью параметров. После проверки модератором и публикации объявления вы можете бесплатно обновлять его позицию в рубрике в своем кабинете используя кнопку "Обновить". Глубокий рубрикатор объявлений, высокая посещаемость и удобство пользования гарантирует, что ваши объявления будут увидены пользователями, и они найдут своего покупателя.</p> 
+	</div>	
+	<div class="modal-footer">
+	
+	</div>
+</div>
+
+</body>
+</html>
